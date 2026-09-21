@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>todo with LS 7th time</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <h3 class="bg-warning text-center p-2">Todo-7th with Local storage</h3>
+
+  <section>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-xxl-8 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+          <div class="card">
+            <div class="card-header bg-info text-white">
+              <h2>Todo Details</h2>
+            </div>
+            <div class="card-body">
+              <form id="todoForm">
+                <div class="form-group">
+                  <label for="todoItem">Todo Item</label>
+                  <input type="text" class="form-control" id="todoItem" />
+                </div>
+                <button class="btn btn-info btn-block p-2" id="addTodoBtn">
+                  Add Todo
+                </button>
+                <button type="button" class="btn btn-info btn-block p-2 d-none" id="updateTodoBtn">
+                  Update Todo
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12 col-sm-12"
+          id="listContainer">
+          <div class="card">
+            <div class="card-body">
+              <ul class="list-group" id="todoContainer">
+                <!-- <li class="list-group-item d-flex justify-content-between">
+                  <b>Html</b>
+                  <div>
+                    <button class="btn btn-sm btn-info mr-2">Edit</button>
+                    <button class="btn btn-sm btn-danger">Delete</button>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ededed;
+}
+
+.formCard{
+  background-color: rgb(234, 250, 255);
+}
+
+.card{
+  box-shadow: 1px 1px 8px black;
+}
+
+.errorImage{
+  width: 250px;
+  height: 250px;
+  object-fit: fill;
+}
