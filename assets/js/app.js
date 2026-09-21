@@ -52,7 +52,8 @@ function onFormSubmit(event) {
     Swal.fire({
                 title: "Added!",
                 text: "Your todo has been added successfully.",
-                icon: "success"
+                icon: "success",
+                timer : 3000
             });
 }
 
@@ -89,7 +90,8 @@ function onTodoUpdate() {
     Swal.fire({
                 title: "Updated!",
                 text: "Your todo has updated deleted.",
-                icon: "success"
+                icon: "success",
+                timer : 3000
             });
     addTodoBtn.classList.remove("d-none");
     updateTodoBtn.classList.add("d-none");
@@ -116,7 +118,8 @@ function onDelete(ele) {
             Swal.fire({
                 title: "Deleted!",
                 text: "Your todo has been deleted.",
-                icon: "success"
+                icon: "success",
+                timer : 3000
             });
         }
 
